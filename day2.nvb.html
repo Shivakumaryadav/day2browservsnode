@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Differece between node.js and Browser</title>
+</head>
+<style>
+    .steve{
+        font-size: 20px;
+        
+    }
+    .steve1{
+        font-size: 20px;
+    }
+</style>
+<body>
+    <h2 style="color:blue");>node js</h2>
+    
+    <p class="steve"> Node doesn't have a predefined "window" object cause it doesn't have a window to draw anything.<br>
+        "location" object is related to a particular url; that means it is for page specific. So, node doesn't require that.<br>
+        Ofcourse Node doesn't have "document" object also, cause it never have to render anything in a page.<br>
+        Node has "global", which is a predefined global object. It contains several functions that are not available in browsers, cause they are needed for server side works only.<br>
+        "require" object is predefined in Node which is used to include modules in the app.<br>
+        In Node everything is a module. You must keep your code inside a module.	 Moduling is not mandatory in client side JavaScript, i.e. in browsers.
+ Node is headless
+
+       </p>
+       <h2 style="color: blue;">browser</h2>
+       <p class="steve1">"window" is a predefined global object which has functions and attributes, that have to deal with window that has been drawn.<br>
+        "location" is another predefined object in browsers, that has all the information about the url we have loaded.<br>
+        "document", which is also another predefined global variable in browsers, has the html which is rendered.<br>
+        Browsers may have an object named "global", but it will be the exact one as "window".<br>
+        Browsers don't have "require" predefined. You may include it in your app for asynchronous file loading.<br>
+        Browsers processes response objects.
+
+
+
+
+     </p>
+</body>
+</html>
